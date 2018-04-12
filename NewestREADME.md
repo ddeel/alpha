@@ -95,7 +95,7 @@ The Swordfish API Emulator should now be ready to use in its default configurati
 
 ### Running the emulator after it is installed
 
-To run the emulator, enter the following commands in a new command prompt window to the activate the virtualenv environment in the **Swordfish** folder and start the emulator:
+To run the emulator, enter the following commands in a new command prompt window to activate the virtualenv environment in the **Swordfish** folder and start the emulator:
 
 ```
 cd Documents\Swordfish
