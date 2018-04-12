@@ -48,7 +48,7 @@ cd Documents
 virtualenv Swordfish
 ```
 
-#### (2) Place a copy of the Redfish Interface Emulator files into the virtualenv environment folder.
+#### (2) Copy the Redfish Interface Emulator files into the virtualenv environment folder.
 
 Using the file explorer, go to the **Redfish-Interface-Emulator** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish** folder and paste all the files into it using ```Control-V```.
 
@@ -66,7 +66,7 @@ pip install flask_restful StringGenerator==0.2.1 urllib3
 
 The Redfish Interface Emulator and its dependencies should now be installed in its default configuration in the **Swordfish** folder.
 
-#### (4) Place a copy of the Swordfish API Emulator files into the virtualenv environment folder, and allow some of the Redfish Interface Emulator files to be overwritten.
+#### (4) Copy the Swordfish API Emulator files into the virtualenv environment folder, and allow some of the Redfish Interface Emulator files to be overwritten.
 
 Using the file explorer, go to the **Swordfish-API-Emulator** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish** folder and paste all the files into it using ```Control-V```.
 
