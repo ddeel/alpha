@@ -37,7 +37,7 @@ The Redfish Interface Emulator must be installed first, and then the Swordfish A
 
 ### Installation steps:
 
-##### (1) Create a virtualenv environment folder for the emulator.
+#### (1) Create a virtualenv environment folder for the emulator.
 
 This folder is where the Redfish Interface Emulator files will be combined with the Swordfish API Emulator files to install the Swordfish emulator. As an example in these instructions, this folder will be created inside the Documents folder and named **Swordfish**.
 
@@ -48,11 +48,11 @@ cd Documents
 virtualenv Swordfish
 ```
 
-##### (2) Place a copy of the Redfish Interface Emulator files into the virtualenv environment folder.
+#### (2) Place a copy of the Redfish Interface Emulator files into the virtualenv environment folder.
 
 Using the file explorer, go to the **Redfish-Interface-Emulator** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish** folder and paste all the files into it using ```Control-V```.
 
-##### (3) Install the Python packages that are required by the emulator.
+#### (3) Install the Python packages that are required by the emulator.
 
 In the command prompt window, enable the virtualenv environment in the **Swordfish** folder and install the Python packages required by the emulator by entering the following commands:
 
@@ -66,19 +66,19 @@ pip install flask_restful StringGenerator==0.2.1 urllib3
 
 The Redfish Interface Emulator and its dependencies should now be installed in its default configuration in the **Swordfish** folder.
 
-##### (4) Place a copy of the Swordfish API Emulator files into the virtualenv environment folder. Some of the Redfish Interface Emulator files will be overwritten.
+#### (4) Place a copy of the Swordfish API Emulator files into the virtualenv environment folder. Some of the Redfish Interface Emulator files will be overwritten.
 
 Using the file explorer, go to the **Swordfish-API-Emulator** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish** folder and paste all the files into it using ```Control-V```.
 
 Windows will indicate that several files in the destination have the same names. Select the Windows “Replace the files in the destination” option.
 
-##### (5) Move a copy of some of the Swordfish files into one of the Redfish Interface Emulator folders. (This step is expected to become unnecessary in the future.)
+#### (5) Move a copy of some of the Swordfish files into one of the Redfish Interface Emulator folders. (This step is expected to become unnecessary in the future.)
 
 Using the file explorer, go to the **Swordfish\api_emulator\swordfish** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish\api_emulator\redfish** folder and paste all the files into it using ```Control-V```.
 
 The Swordfish API Emulator should now be installed in its default configuration in the **Swordfish** folder.
 
-##### (6) If desired, a simple test of the Redfish Interface Emulator installation can be done by running the emulator and accessing the Redfish service root using a browser.
+#### (6) If desired, a simple test of the Redfish Interface Emulator installation can be done by running the emulator and accessing the Redfish service root using a browser.
 
 To run the emulator, enter the following command in the command prompt window (this assumes the virtualenv environment in the **Swordfish** folder is still activated from Step 3 above):
 
