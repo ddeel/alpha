@@ -121,19 +121,13 @@ To exit the virtualenv environment without closing the command prompt window, th
   - *api_emulator\resource_manager.py*
   - *api_emulator\utils.py*
 
-  The Redfish Interface Emulator files are maintained on GitHub by the DMTF.
+- The *api_emulator\resource_manager.py* file establishes which emulator resources are static and which emulator resources are dynamic. Create/Read/Update/Delete (CRUD) operations can be done on dynamic resources via the API using REST operations, but static resources are read-only and cannot be changed via the API.
 
-  The Swordfish API Emulator files are maintained on GitHub by the SNIA.
-
-- The *api_emulator\resource_manager.py* file controls which emulator resources are static and which emulator resources are dynamic. Create/Read/Update/Delete (CRUD) operations can be done on dynamic resources via the API using normal REST operations, but the static resources are read-only and cannot be changed via the API.
-
-  The Swordfish resources in the emulator are dynamic, and most of the Redfish resources are also dynamic, but four Redfish resources are currently still static in the default configuration of the Redfish Interface Emulator:
+- The Swordfish resources in the emulator are dynamic, and most of the Redfish resources are also dynamic, but four Redfish resources are currently still static in the default configuration of the Redfish Interface Emulator:
   - TaskService
   - SessionService
   - AccountService
   - Registries
-
-  These resources will remain static until the Redfish Interface Emulator is updated to make them dynamic.
 
 - The static resources in the emulator are populated by placing appropriate JSON mockup folders into the *api_emulator\redfish\static* directory. Instructions for this can be found in the Redfish Interface Emulator *README.md* file. Note that the dynamic resources in the emulator are NOT populated or initialized by the mockups in this directory.
 
