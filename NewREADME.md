@@ -85,7 +85,7 @@ The Swordfish API Emulator should now be installed in the **Swordfish** folder.
 
 (4) If desired, a simple test of the Redfish Interface Emulator installation can be done by running the emulator and accessing the Redfish service root using a browser.
 
-To run the emulator, enter the following commands in a new command prompt window to the activate the virtualenv environment in the Swordfish folder and start the emulator:
+To run the emulator, enter the following commands in a new command prompt window to the activate the virtualenv environment in the **Swordfish** folder and start the emulator:
 
 ```
 cd Documents\Swordfish
@@ -102,7 +102,7 @@ The Swordfish API Emulator should now be ready to use in its default configurati
 
 ### Running the emulator after it is installed
 
-To run the emulator, enter the following commands in a new command prompt window to the activate the virtualenv environment in the Swordfish folder and start the emulator:
+To run the emulator, enter the following commands in a new command prompt window to the activate the virtualenv environment in the **Swordfish** folder and start the emulator:
 
 ```
 cd Documents\Swordfish
