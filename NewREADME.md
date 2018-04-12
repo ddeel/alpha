@@ -30,7 +30,7 @@ The Redfish Interface Emulator must be installed first, and then the Swordfish A
 ### These installation steps assume the following:
 
 - The prerequisites for the emulator have been installed and virtualenv is being used.
-- The emulator is being installed in a folder named **Swordfish** in the Documents directory. (This is only for this example; the folder can have an arbitrary name and be located anywhere.)
+- The emulator is being installed in a folder named **Swordfish** in the Documents directory. (This is only an example for the installation steps given below; the folder can have an arbitrary name and be located anywhere.)
 - The GitHub code for the Redfish Interface Emulator is in a folder named **Redfish-Interface-Emulator**.
 - The GitHub code for the Swordfish API Emulator is in a folder named **Swordfish-API-Emulator**.
 
