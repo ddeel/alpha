@@ -52,9 +52,9 @@ virtualenv Swordfish
 
 Using the file explorer, go to the **Redfish-Interface-Emulator** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish** folder and paste all the files into it using ```Control-V```.
 
-#### (3) Install the Python packages that are required by the emulator.
+#### (3) Activate the virtualenv environment and install the Python packages that are required by the emulator.
 
-In the command prompt window, enable the virtualenv environment in the **Swordfish** folder and install the Python packages required by the emulator by entering the following commands:
+In the command prompt window, activate the virtualenv environment in the **Swordfish** folder and install the Python packages required by the emulator by entering the following commands:
 
 ```
 cd Swordfish
@@ -70,15 +70,15 @@ The Redfish Interface Emulator and its dependencies should now be installed in i
 
 Using the file explorer, go to the **Swordfish-API-Emulator** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish** folder and paste all the files into it using ```Control-V```.
 
-Windows will indicate that several files in the destination have the same names. Select the Windows “Replace the files in the destination” option.
+Windows will indicate that some files in the destination have the same names. Select the Windows “Replace the files in the destination” option.
 
-#### (5) Move a copy of some of the Swordfish files into one of the Redfish Interface Emulator folders. (This step is expected to become unnecessary in the future.)
+#### (5) Copy the Swordfish files for dynamic objects into the proper Redfish Interface Emulator folder.
 
 Using the file explorer, go to the **Swordfish\api_emulator\swordfish** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish\api_emulator\redfish** folder and paste all the files into it using ```Control-V```.
 
-The Swordfish API Emulator should now be installed in its default configuration in the **Swordfish** folder.
+The Swordfish API Emulator and its dependencies should now be installed in its default configuration in the **Swordfish** folder.
 
-#### (6) If desired, a simple test of the Redfish Interface Emulator installation can be done by running the emulator and accessing the Redfish service root using a browser.
+#### (6) If desired, a simple test of the Redfish Interface Emulator installation can now be done by running the emulator and accessing the Redfish service root using a browser.
 
 To run the emulator, enter the following command in the command prompt window (this assumes the virtualenv environment in the **Swordfish** folder is still activated from step 3 above):
 
@@ -105,7 +105,7 @@ python emulator.py
 
 To stop the emulator and exit the virtualenv environment at the same time, close the command prompt window.
 
-To stop the emulator without closing the command prompt window, enter ```Control-C``` in the command prompt window. Note that the emulator might not stop until another API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
+To stop the emulator without closing the command prompt window, enter ```Control-C``` in the command prompt window. Note that the emulator might not appear to stop until another emulator API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
 
 To exit the virtualenv environment without closing the command prompt window, the emulator must first be stopped, then enter ```deactivate``` in the command prompt window.
 
@@ -141,6 +141,6 @@ To exit the virtualenv environment without closing the command prompt window, th
 
 - The current default configuration of the Redfish Interface Emulator pre-populates several of the Redfish dynamic resources. Instructions for starting the emulator without any pre-populated dynamic resources can be found in the Redfish Interface Emulator *README.md* file.
 
-- Sometimes a ```Control-C``` in the command prompt window does not immediately stop the emulator. When this occurs, the emulator will stop as soon as another API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
+- Sometimes a ```Control-C``` in the command prompt window does not immediately stop the emulator. When this occurs, the emulator will stop as soon as another emulator API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
 
 ----
