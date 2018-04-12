@@ -72,7 +72,7 @@ Using the file explorer, go to the **Swordfish-API-Emulator** folder, select and
 
 Windows will indicate that some files in the destination have the same names. Select the Windows “Replace the files in the destination” option.
 
-#### (5) Copy the Swordfish files for dynamic objects into the proper Redfish Interface Emulator folder.
+#### (5) Copy the Swordfish files for dynamic Swordfish objects into the proper Redfish Interface Emulator folder.
 
 Using the file explorer, go to the **Swordfish\api_emulator\swordfish** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **Swordfish\api_emulator\redfish** folder and paste all the files into it using ```Control-V```.
 
@@ -95,7 +95,7 @@ The Swordfish API Emulator should now be ready to use in its default configurati
 
 ### Running the emulator after it is installed
 
-To run the emulator, enter the following commands in a new command prompt window to activate the virtualenv environment in the **Swordfish** folder and start the emulator:
+Enter the following commands in a new command prompt window to activate the virtualenv environment in the **Swordfish** folder and start the emulator:
 
 ```
 cd Documents\Swordfish
