@@ -133,7 +133,7 @@ To exit the virtualenv environment after the emulator is stopped, enter ```deact
 
   These resources will remain static until the Redfish Interface Emulator is updated to make them dynamic.
 
-- The static resources in the emulator are populated by placing appropriate JSON mockup folders into the *api_emulator\redfish\static* directory. Instructions for this can be found in the Redfish Interface Emulator “README.md” file. Note that the dynamic resources in the emulator are NOT populated or initialized by the mockups in this directory.
+- The static resources in the emulator are populated by placing appropriate JSON mockup folders into the *api_emulator\redfish\static* directory. Instructions for this can be found in the Redfish Interface Emulator *README.md* file. Note that the dynamic resources in the emulator are NOT populated or initialized by the mockups in this directory.
 
 - The dynamic resources in the emulator can be populated via the API using Create/Read/Update/Delete (CRUD) operations, and they can also be pre-populated by creating an appropriate JSON file that describes the desired dynamic resources for the Redfish Interface Emulator’s INFRAGEN Module. Instructions for using the INFRAGEN Module can be found in the Redfish Interface Emulator *README.md* file.
 
