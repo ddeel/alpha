@@ -121,7 +121,7 @@ To exit the virtualenv environment without closing the command prompt window, th
   - *api_emulator\resource_manager.py*
   - *api_emulator\utils.py*
 
-- The *api_emulator\resource_manager.py* file establishes which emulator resources are static and which emulator resources are dynamic. Create/Read/Update/Delete (CRUD) operations can be done on dynamic resources via the API using REST operations, but static resources are read-only and cannot be changed via the API.
+- The *api_emulator\resource_manager.py* file establishes which emulator resources are static and which emulator resources are dynamic. Create/Read/Update/Delete (CRUD) operations can be done on dynamic resources via the emulator API using REST operations, but static resources are read-only and cannot be changed via the emulator API.
 
 - The Swordfish resources in the emulator are dynamic, and most of the Redfish resources are also dynamic, but four Redfish resources are currently still static in the default configuration of the Redfish Interface Emulator:
   - TaskService
@@ -131,10 +131,10 @@ To exit the virtualenv environment without closing the command prompt window, th
 
 - The static resources in the emulator are populated by placing appropriate JSON mockup folders into the *api_emulator\redfish\static* directory. Instructions for this can be found in the Redfish Interface Emulator *README.md* file. Note that the dynamic resources in the emulator are NOT populated or initialized by the mockups in this directory.
 
-- The dynamic resources in the emulator can be populated via the API using Create/Read/Update/Delete (CRUD) operations, and they can also be pre-populated by creating an appropriate JSON file that describes the desired dynamic resources for the Redfish Interface Emulator’s INFRAGEN Module. Instructions for using the INFRAGEN Module can be found in the Redfish Interface Emulator *README.md* file.
+- The dynamic resources in the emulator can be populated via the emulator API using Create/Read/Update/Delete (CRUD) operations, and they can also be pre-populated by creating an appropriate JSON file that describes the desired dynamic resources for the Redfish Interface Emulator’s INFRAGEN Module. Instructions for using the INFRAGEN Module can be found in the Redfish Interface Emulator *README.md* file.
 
 - The current default configuration of the Redfish Interface Emulator pre-populates several of the Redfish dynamic resources. Instructions for starting the emulator without any pre-populated dynamic resources can be found in the Redfish Interface Emulator *README.md* file.
 
-- Sometimes a ```Control-C``` in the command prompt window does not immediately stop the emulator. When this occurs, the emulator will stop as soon as another emulator API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
+- Sometimes a ```Control-C``` in the command prompt window does not appear to immediately stop the emulator. When this occurs, the emulator will stop as soon as another emulator API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
 
 ----
