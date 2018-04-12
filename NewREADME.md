@@ -1,7 +1,8 @@
-Copyright 2016-2018 Storage Networking Industry Association (SNIA), USA. All rights reserved. For the full SNIA copyright policy, see http://www.snia.org/about/corporate_info/copyright
+Copyright 2016-2018 Storage Networking Industry Association (SNIA), USA. All rights reserved. For the full SNIA copyright policy, see [http://www.snia.org/about/corporate_info/copyright](http://www.snia.org/about/corporate_info/copyright)
 
-Contributors that are not SNIA members must first agree to the terms of the SNIA Contributor Agreement for Non-Members:  www.snia.org/cla
+Contributors that are not SNIA members must first agree to the terms of the SNIA Contributor Agreement for Non-Members:  [www.snia.org/cla](www.snia.org/cla)
 
+----
 
 # Swordfish-API-Emulator
 
@@ -11,6 +12,7 @@ The Swordfish API Emulator extends the [DMTF Redfish Interface Emulator](https:/
 
 The Swordfish API Emulator code is maintained on GitHub by the SNIA, and the Redfish Interface Emulator code is maintained on GitHub by the DMTF.
 
+----
 
 ## Prerequisites for the emulator
 
@@ -18,6 +20,7 @@ The Redfish Interface Emulator and the Swordfish API Emulator both require Pytho
 
 It is recommended (but not required) to run the emulator using virtualenv, because it helps keep the emulator environment separate from other Python environments running on the same system. If this is not already installed, enter the following command into a command prompt window to install virtualenv after Python is installed: ```pip install virtualenv```
 
+----
 
 ## Installing the Swordfish API Emulator on Windows
 
@@ -34,80 +37,81 @@ The Redfish Interface Emulator must be installed first, and then the Swordfish A
 
 ### Installation steps for the Redfish Interface Emulator:
 
-1. Open a command prompt window and create a virtualenv environment folder for the emulator in the Documents directory by entering the following commands:
+(1) Open a command prompt window and create a virtualenv environment folder for the emulator in the Documents directory by entering the following commands:
 
-  ```
-  cd Documents
-  virtualenv SwordfishEmulator
-  ```
+```
+cd Documents
+virtualenv SwordfishEmulator
+```
 
-2. Using the file explorer, go to the **RedfishCode** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **SwordfishEmulator** folder and paste all the files into it using ```Control-V```. This can also be done using a drag-and-drop copying operation.
+(2) Using the file explorer, go to the **RedfishCode** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **SwordfishEmulator** folder and paste all the files into it using ```Control-V```. This can also be done using a drag-and-drop copying operation.
 
-3. In the command prompt window, enable the virtualenv environment, and install the Python packages required by the emulator by entering the following commands:
+(3) In the command prompt window, enable the virtualenv environment, and install the Python packages required by the emulator by entering the following commands:
 
-  ```
-  cd SwordfishEmulator
-  Scripts\activate
-  pip install setuptools markupsafe itsdangerous flask
-  pip install aniso8601 pytz flask_httpauth requests
-  pip install flask_restful StringGenerator==0.2.1 urllib3
-  ```
+```
+cd SwordfishEmulator
+Scripts\activate
+pip install setuptools markupsafe itsdangerous flask
+pip install aniso8601 pytz flask_httpauth requests
+pip install flask_restful StringGenerator==0.2.1 urllib3
+```
 
-4. If desired, the Redfish Interface Emulator can now be run in its default configuration as a simple installation test by entering the following command in the command prompt window:
+(4) If desired, a simple installation test can now be run on the Redfish Interface Emulator by entering the following command in the command prompt window:
 
-  ```
-  python emulator.py
-  ```
+```
+python emulator.py
+```
 
-  Use a browser to access http://localhost:5000/redfish/v1/ on the system where the emulator has been installed. If the emulator is working properly, the Redfish service root should be displayed by the browser.
+Use a browser to access http://localhost:5000/redfish/v1/ on the system where the emulator has been installed. If the emulator is working properly, the Redfish service root should be displayed by the browser.
 
-5. If the emulator is running, cause it to stop by entering ```Control-C``` in the command prompt window.
+(5) If the emulator is running, cause it to stop by entering ```Control-C``` in the command prompt window.
 
 
 ### Installation steps for the Swordfish API Emulator
 
-These steps should only be done after the Redfish Interface Emulator has been installed. It is assumed that the virtualenv environment in the **SwordfishEmulator** folder is still activated in the command prompt window. (If not, enter ```Scripts\activate``` in the command prompt window.)
+These steps should only be done after the Redfish Interface Emulator has been installed in the **SwordfishEmulator** folder. It is assumed that the virtualenv environment in the **SwordfishEmulator** folder is still activated in the command prompt window.
 
-1. Using the file explorer, go to the **SwordfishCode** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **SwordfishEmulator** folder and paste all the files into it using ```Control-V```. This can also be done using a drag-and-drop copying operation.
+(1) Using the file explorer, go to the **SwordfishCode** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **SwordfishEmulator** folder and paste all the files into it using ```Control-V```. This can also be done using a drag-and-drop copying operation.
 
-2. Windows will indicate that several files in the destination have the same names. Select the Windows “Replace the files in the destination” option.
+(2) Windows will indicate that several files in the destination have the same names. Select the Windows “Replace the files in the destination” option.
 
-3. Using the file explorer, go to the **SwordfishEmulator\api_emulator\swordfish** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **SwordfishEmulator\api_emulator\redfish** folder and paste all the files into it using ```Control-V```. This can also be done using a drag-and-drop copying operation.
+(3) Using the file explorer, go to the **SwordfishEmulator\api_emulator\swordfish** folder, select and copy all the files using ```Control-A``` and ```Control-C```, then go to the **SwordfishEmulator\api_emulator\redfish** folder and paste all the files into it using ```Control-V```. This can also be done using a drag-and-drop copying operation.
 
-4. The Swordfish API Emulator can now be run in its default configuration by entering the following command in the command prompt window:
+(4) The Swordfish API Emulator can now be run in its default configuration by entering the following command in the command prompt window:
 
-  ```
-  python emulator.py
-  ```
+```
+python emulator.py
+```
 
-  As a simple installation test, use a browser to access http://localhost:5000/redfish/v1/ on the system where the emulator has been installed. If the emulator is working properly, the Redfish service root should be displayed on the browser, with two additional Swordfish resources added: StorageServices, and StorageSystems.
+As a simple installation test, use a browser to access http://localhost:5000/redfish/v1/ on the system where the emulator has been installed. If the emulator is working properly, the Redfish service root should be displayed on the browser, with two additional Swordfish resources added: StorageServices, and StorageSystems.
 
-  The Swordfish API Emulator should now be ready to use in its default configuration.
+The Swordfish API Emulator should now be ready to use in its default configuration.
 
-  To stop the emulator, enter ```Control-C``` in the command prompt window, or close the command prompt window.
+To stop the emulator, enter ```Control-C``` in the command prompt window, or close the command prompt window.
 
-  To exit the virtualenv environment after the emulator is stopped, enter ```deactivate``` in the command prompt window, or close the command prompt window.
+To exit the virtualenv environment after the emulator is stopped, enter ```deactivate``` in the command prompt window, or close the command prompt window.
 
 
 ### Restarting the emulator after exiting the virtualenv environment
 
-To restart the emulator after exiting the virtualenv environment, or to run the emulator from a new command prompt window:
+To restart the emulator after exiting the virtualenv environment, or to run the emulator from a new command prompt window, do the following:
 
-1. In a command prompt window, go to the “SwordfishEmulator” folder, then enter the following commands:
+In a command prompt window, go to the **SwordfishEmulator** folder, then enter the following commands:
 
-  ```
-  Scripts\activate
-  python emulator.py
-  ```
+```
+Scripts\activate
+python emulator.py
+```
 
-  To stop the emulator, enter ```Control-C``` in the command prompt window, or close the command prompt window.
+To stop the emulator, enter ```Control-C``` in the command prompt window, or close the command prompt window.
 
-  To exit the virtualenv environment after the emulator is stopped, enter ```deactivate``` in the command prompt window, or close the command prompt window.
+To exit the virtualenv environment after the emulator is stopped, enter ```deactivate``` in the command prompt window, or close the command prompt window.
 
+----
 
 ## Notes about the Swordfish API Emulator
 
-- The Redfish Interface Emulator *README.md* file should be reviewed before attempting to work with the Swordfish API Emulator or change the default configuration.
+- The [Redfish Interface Emulator *README.md* file](https://github.com/DMTF/Redfish-Interface-Emulator/blob/master/README.md) should be reviewed before working with the Swordfish API Emulator or changing the default configuration.
 
 - The configuration of the overall emulator is controlled by the *emulator-config.json* file in the directory where the emulator is installed. (This is the *SwordfishEmulator* folder in the installation steps above.) Instructions for using this file can be found in the Redfish Interface Emulator *README.md* file.
 
