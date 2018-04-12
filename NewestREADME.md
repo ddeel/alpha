@@ -80,7 +80,7 @@ The Swordfish API Emulator should now be installed in its default configuration 
 
 #### (6) If desired, a simple test of the Redfish Interface Emulator installation can be done by running the emulator and accessing the Redfish service root using a browser.
 
-To run the emulator, enter the following command in the command prompt window (this assumes the virtualenv environment in the **Swordfish** folder is still activated from Step 3 above):
+To run the emulator, enter the following command in the command prompt window (this assumes the virtualenv environment in the **Swordfish** folder is still activated from step 3 above):
 
 ```
 python emulator.py
@@ -88,7 +88,7 @@ python emulator.py
 
 Use a browser to access http://localhost:5000/redfish/v1/ on the system where the emulator has been installed. If the emulator is working properly, the Redfish service root should be displayed on the browser, with two additional Swordfish resources added: StorageServices, and StorageSystems.
 
-After this simple installation test, stop the emulator by entering ```Control-C``` in the command prompt window, or by closing the command prompt window.
+After this simple installation test, stop the emulator and exit the virtualenv virtual environment by closing the command prompt window.
 
 The Swordfish API Emulator should now be ready to use in its default configuration.
 
@@ -103,9 +103,11 @@ Scripts\activate
 python emulator.py
 ```
 
-To stop the emulator, enter ```Control-C``` in the command prompt window, or close the command prompt window.
+To stop the emulator and exit the virtualenv environment at the same time, close the command prompt window.
 
-To exit the virtualenv environment after the emulator is stopped, enter ```deactivate``` in the command prompt window, or close the command prompt window.
+To stop the emulator without closing the command prompt window, enter ```Control-C``` in the command prompt window. Note that the emulator might not stop until another API access is attempted. A web browser can be used to access the Redfish service root to force this to happen, if no other REST client is readily available.
+
+To exit the virtualenv environment without closing the command prompt window, the emulator must first be stopped, then enter ```deactivate``` in the command prompt window.
 
 ----
 
