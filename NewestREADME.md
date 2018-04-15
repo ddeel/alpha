@@ -16,7 +16,7 @@ The Swordfish API Emulator code is maintained on GitHub by the SNIA, and the Red
 
 ## Prerequisites for the emulator
 
-The Redfish Interface Emulator and the Swordfish API Emulator both require Python 3.6 or higher. If this is not already installed, go to www.python.org to download and install an appropriate version of Python.
+The Redfish Interface Emulator and the Swordfish API Emulator both require Python 3.5 or higher. If this is not already installed, go to www.python.org to download and install an appropriate version of Python.
 
 It is recommended (but not required) to run the emulator using virtualenv, because it helps keep the emulator environment separate from other Python environments running on the same system. If this is not already installed, enter the following command into a command prompt window to install virtualenv after Python is installed: ```pip install virtualenv```
 
